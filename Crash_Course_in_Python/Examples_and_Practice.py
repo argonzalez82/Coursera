@@ -1,4 +1,4 @@
-#Week 3 Practice Quiz : While Loops 
+#Week 3 Practice Quiz : While Loops
 
 
 #QUESTION 2:
@@ -29,14 +29,14 @@ def is_power_of_two(n):
   # Check if n == 0, if True exit as False to prevent endless loop.
   if n == 0:
     return False
-  # Check if the number can be divided by two without a remainder  
+  # Check if the number can be divided by two without a remainder
   while n % 2 == 0:
     n = n / 2
   # If after dividing by two the number is 1, it's a power of two
   if n == 1:
     return True
   return False
-  
+
 
 print(is_power_of_two(0)) # Should be False
 print(is_power_of_two(1)) # Should be True
@@ -51,7 +51,7 @@ def sum_divisors(n):
   # Return the sum of all divisors of n, not including n
   return sum([i for i in range(1, n)
                 if n % i == 0])
-                
+
 print(sum_divisors(0))
 # 0
 print(sum_divisors(3)) # Should sum of 1
@@ -69,7 +69,7 @@ def multiplication_table(number):
 	multiplier = 1
 	# Only want to loop through 5
 	while multiplier <= 5:
-		result = multiplier * number 
+		result = multiplier * number
 		# What is the additional condition to exit out of the loop?
 		if result > 25 :
 			break
@@ -77,13 +77,13 @@ def multiplication_table(number):
 		# Increment the variable for the loop
 		multiplier += 1
 
-multiplication_table(3) 
+multiplication_table(3)
 # Should print: 3x1=3 3x2=6 3x3=9 3x4=12 3x5=15
 
-multiplication_table(5) 
+multiplication_table(5)
 # Should print: 5x1=5 5x2=10 5x3=15 5x4=20 5x5=25
 
-multiplication_table(8)	
+multiplication_table(8)
 # Should print: 8x1=8 8x2=16 8x3=24
 
 #  sudo ln -sv /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
@@ -93,15 +93,15 @@ multiplication_table(8)
 """**************End of Quiz***********************"""
 
 
-#Week 3 For Loop Quiz 
+#Week 3 For Loop Quiz
 
 
 #QUESTION 2:
-'''Fill in the blanks to make the factorial function return the factorial of n. 
-Then, print the first 10 factorials (from 0 to 9) with the corresponding number. 
-Remember that the factorial of a number is defined as the product of an integer and 
-all integers before it. For example, the factorial of five (5!) is equal to 1*2*3*4*5=120. 
-Also recall that the factorial of zero (0!) is equal to 1.'''
+'''Fill in the blanks to make the factorial function return the factorial of n.
+Then, print the first 10 factorials (from 0 to 9) with the corresponding number.
+Remember that the factorial of a number is defined as the product of an integer
+andall integers before it. For example, the factorial of five (5!) is equal to
+1*2*3*4*5=120. Also recall that the factorial of zero (0!) is equal to 1.'''
 
 def factorial(n):
     result = 1
@@ -115,10 +115,9 @@ for n in range(0,10):
 
 
 #QUESTION 3:
-#Write a script that prints the first 10 cube numbers (x**3), starting with x=1 and ending with x=10.
+#Write a script that prints the first 10 cube numbers (x**3),
+#starting with x=1 and ending with x=10.
 
 for x in range(1,11):
   cubed = x ** 3
   print(cubed)
-
-
